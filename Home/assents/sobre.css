@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4103eb;
+}
+
+header {
+    height: 45px;
+    background-color: #1100fd;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+}
+
+header h1 {
+
+    font-size: 1.5em;
+    margin: 0;
+    animation: fadeInDown 1s ease;
+}
+
+.content {
+
+    border: solid 2px rgb(81, 0, 231);
+    max-width: 800px;
+    margin: 85px 5px; /* Centraliza o conteúdo na página */
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease;
+}
+
+footer {
+    background-color: #2c06d6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo do botão */
+.btn {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #9d24ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espaço adicional entre o botão e o conteúdo */
+}
+
+.btn:hover {
+    background-color: #c300ff;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
